@@ -1,0 +1,27 @@
+class stringbuffer
+{
+  public static void main (String args[])
+  {
+    StringBuffer sb = new StringBuffer("HEllo");
+      System.out.println ("buffer =" + sb);
+      System.out.println ("length =" + sb.length ());
+      System.out.println ("capacity =" + sb.capacity ());
+      sb.setCharAt (1, 'i');
+      sb.setLength (2);
+      System.out.println ("buffer after =" + sb);
+      System.out.println ("charAt(1) after =" + sb.charAt (1));
+      sb.append ("Java");
+      System.out.println (sb);
+    StringBuffer sbb = new StringBuffer ("I Java!");
+      sbb.insert (2, "like");
+      System.out.println (sbb);
+      sbb.reverse ();
+      System.out.println ("String after reverse : " + sbb);
+      sbb.reverse ();
+      System.out.println ("String after reverse : " + sbb);
+      sbb.delete (8, 15);
+      System.out.println ("After delete : " + sbb);
+      sbb.deleteCharAt (0);
+      System.out.println ("After deleteCharAt : " + sbb);
+  }
+}

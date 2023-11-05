@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class stringfunc
+{
+  public static void main (String[]args)
+  {
+    Scanner scan = new Scanner (System.in);
+      System.out.print ("Enter the String:");
+    String str = scan.nextLine ();
+    int len = str.length ();
+      System.out.println ("\nLength of string =" + len);
+      String[] result1 = str.split(" ");
+    for (String str1:result1)
+      {
+System.out.println (str1 + " ::");
+      }
+    String str1 = "Learn Java";
+    String str2 = "Learn Python";
+    String str3 = "Learn Kolin";
+    int result;
+    result = str1.compareTo (str2);
+    System.out.println (result);
+    result = str1.compareTo (str3);
+    System.out.println (result);
+    result = str3.compareTo (str1);
+    System.out.println (result);
+    String str4 = "Learn c#";
+    String str5 = "Learn Java";
+    result = str4.compareToIgnoreCase (str5);
+    System.out.println (result);
+    System.out.println (str1.replace ('L', 'E'));
+    System.out.println ("Hello".replace ('5', 'j'));
+    String str6 = str1.concat (" Efficiently");
+    System.out.println (str6);
+    System.out.println (str1.contains ("Java"));
+    System.out.println (str1.contains ("Java"));
+    System.out.println (str1.endsWith ("t"));
+    System.out.println (str1.endsWith ("java"));
+    System.out.println (str4.equals (str5));
+    System.out.println (str1.toLowerCase ());
+    System.out.println (str1.toUpperCase ());
+  }
+}
